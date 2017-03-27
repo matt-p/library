@@ -10,6 +10,7 @@ class Book {
     Date returnDate
     String student
     Boolean overdue
+    static hasMany=[bookreviews: Bookreview]
 
     static constraints = {
 	title blank:false, nullable:false, maxSize:20

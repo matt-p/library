@@ -12,7 +12,7 @@ class Course {
     static constraints = {
 	title blank:false, nullable:false, maxSize:20
 	code blank:false, nullable:false, maxSize:20, unique:true
-	leader blank:flase, nullable:false, maxSize:20
+	leader blank:false, nullable:false, maxSize:20
 	department blank:false, nullable:false, maxSize:30
 	description blank:false, nullable:false, maxSize:40, widget:'textarea'
 	studyMode blank:false, nullable:false, maxSize:20
