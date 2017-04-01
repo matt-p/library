@@ -3,7 +3,7 @@ package com.mpoole
 class BootStrap {
 
     def init = { servletContext ->
-	def course1 = new Course(
+	/*def course1 = new Course(
 		title:'Computing',
 		code:'COMP123',
 		leader:'Sophie Bloggs',
@@ -120,7 +120,7 @@ class BootStrap {
 		password:'catherinebpassword',
 		telephone:'01143454321',
 		library:2
-	).save()
+	).save()*/
     }
     def destroy = {
     }

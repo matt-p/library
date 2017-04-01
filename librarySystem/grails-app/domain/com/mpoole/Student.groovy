@@ -11,6 +11,10 @@ class Student {
     Library library
     static hasMany=[books: Book, bookreviews: Bookreview]
 
+    String toString() {
+	return name
+    }
+
     static constraints = {
 	name blank:false, nullable:false, maxSize:20
 	email blank:false, nullable:false, email:true

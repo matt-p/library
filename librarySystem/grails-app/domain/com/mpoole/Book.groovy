@@ -13,6 +13,10 @@ class Book {
     Library library
     static hasMany=[bookreviews: Bookreview]
 
+    String toString() {
+	return title
+    }
+    
     boolean isOverdue() { 
 	return true
     }

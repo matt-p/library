@@ -10,6 +10,10 @@ class Librarian {
     int telephone
     Library library
 
+    String toString() {
+	return name
+    }
+
     static constraints = {
 	name blank:false, nullable:false, maxSize:20
 	email blank:false, nullable:false, email:true

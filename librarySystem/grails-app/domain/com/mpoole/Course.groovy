@@ -10,6 +10,10 @@ class Course {
     String studyMode
     static hasMany=[students: Student]
 
+    String toString() {
+	return title
+    }
+
     static constraints = {
 	title blank:false, nullable:false, maxSize:30
 	code blank:false, nullable:false, maxSize:20, unique:true

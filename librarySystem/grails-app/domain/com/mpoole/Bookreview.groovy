@@ -7,6 +7,10 @@ class Bookreview {
     Student student
     String review
 
+    String toString() {
+	return book
+    }
+
     static constraints = {
 	book blank:false, nullable:false, maxSize:30
 	dateMade blank:false, nullable:false
