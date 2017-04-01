@@ -10,6 +10,7 @@ class Book {
     Date returnDate
     Student student
     Boolean overdue
+    Library library
     static hasMany=[bookreviews: Bookreview]
 
     boolean isOverdue() { 
@@ -25,5 +26,6 @@ class Book {
 	returnDate blank:false, nullable:false
 	student blank:false, nullable:false, maxSize:20
 	overdue blank:false, nullable:false
+	library blank:false, nullable:false, maxSize:20
     }
 }

@@ -10,7 +10,7 @@ class Library {
     static hasMany=[books: Book, students: Student, librarians: Librarian]
 
     static constraints = {
-	name blank:false, nullable:false, maxSize:20
+	name blank:false, nullable:false, maxSize:40
 	address blank:false, nullable:false, maxSize:40
 	openingHours blank:false, nullable:false
 	location blank:false, nullable:false, maxSize:40
