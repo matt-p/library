@@ -15,8 +15,11 @@ class BookSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void isitOverdue() {
+        when: "A Book has overdue"
+	def book1=new Book(overdue:true)
+	then: "The isOverdue method will overdue"
+	book1.isOverdue()==true
+
     }
 }
