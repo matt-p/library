@@ -1,0 +1,79 @@
+body {
+    background: rgba(73,155,234,1);
+}
+.footer {
+    display: none;
+}
+.row {
+    padding: 0px;
+    margin:0px;
+    max-width:none;
+}
+.login-header {
+    background: #333;
+    color: #fff;
+    padding:20px 0px;
+}
+.login-header>div:nth-child(2) {
+    text-align: right;
+}
+.login-header>div>span {
+    font-weight: 400;
+}
+.login-header>div>a {
+    text-decoration: none;
+    color: #fff;
+}
+.logged-out {
+    padding-left:15px;
+}
+.welcome-panel, .login-panel {
+    background: rgba(255,255,255, .8);
+    margin-top: 25px;
+    text-align:center;
+    padding:20px;
+}
+.welcome-panel>p:last-child{
+    padding-top: 0.8em;
+    font-size: 12px;
+    color: #777;
+}
+h1 {
+    font-size:2em;
+    margin:0.8em;
+}
+th:hover, tr:hover {
+    background: #f0f0f0;
+}
+td,th {
+    vertical-align:middle;
+}
+input {
+    border:none;
+}
+input[type="submit"] {
+    padding: 7px 17px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #333;
+}
+td.value, tr:last-child>td { 
+    text-align: center;
+}
+table { 
+    border-top:0; 
+}
+form>h1 { 
+    margin:0.5em; 
+}
+@media (max-width:992px) {
+	.logged-out, .logged-in {
+	    width:100%;
+            display:inline-block;
+	    text-align: center !important;
+	}
+	.welcome-panel, .welcome-panel>h1 {
+	    margin-top: 0px !important;	
+	}
+}
+

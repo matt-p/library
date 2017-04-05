@@ -1,0 +1,85 @@
+.first {
+    background-color: #333;
+    padding: 0.5% 4em;
+}
+.second {
+    background-color: #444;
+    padding: 0.5% 4em;
+}
+.first>*,
+.second>* {
+    display: inline;
+}
+.second>h3,
+.first>h3 {
+    padding: 10px 10px 0px 10px;
+    color: #fff;
+    margin: 0px;
+}
+.lib-button {
+    background-color: #888;
+    border: 0;
+    margin: 5px;
+    min-width: 100px;
+}
+.lib-button:hover {
+    background-color: #999;
+}
+.lib-button>a {
+    text-decoration: none;
+    color: #fff;
+}
+p.description {
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+}
+body {
+    background: rgba(73,155,234,1);
+}
+.footer {
+    display: none;
+}
+.row {
+    padding: 0px;
+    max-width:none;
+}
+.login-header {
+    background: #333;
+    color: #fff;
+    padding:20px 0px;
+}
+.login-header>div:nth-child(2) {
+    text-align: right;
+}
+.login-header>div>span {
+    font-weight: 400;
+}
+.login-header>div>a {
+    text-decoration: none;
+    color: #fff;
+}
+.logged-out {
+    padding-left:15px;
+}
+.controller-container {
+    padding-top:35px;
+}
+#content {
+    background:transparent;
+}
+@media (max-width:992px) {
+	.logged-out, .logged-in {
+	    width:100%;
+            display:inline-block;
+	    text-align: center !important;
+	}
+	.first>*, .second>* {
+	    display: inline-block;
+	    text-align: center;
+	    width: 100%;
+	}
+	.first, .second {
+	    padding: 1em 4em;
+	}
+}
